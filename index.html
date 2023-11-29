@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Memegen</div>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Memes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+  </header>
+  <section class="image-gallery">
+    <img src="img/1.jpg" alt="">
+    <img src="img/2.jpg" alt="">
+    <img src="img/3.jpg" alt=""> 
+    <img src="img/4.jpg" alt="">
+    <img src="img/5.jpg" alt="">
+  </section>
+  <section class="meme-editor">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <input type="text" id="textInput" placeholder="Enter text">
+  </section>
+  <section class="memes"></section>
+
+  <script src="js/meme.service.js"></script>
+  <script src="js/meme.controller.js"></script>
+  <script src="js/gallery.controller.js"></script>
+  
+</body>
+</html>
