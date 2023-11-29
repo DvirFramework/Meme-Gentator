@@ -5,7 +5,7 @@ var gImgs = [{ id: 1, url: 'img/1.jpg', keywords: ['politic', 'funny'] },
               { id: 5, url: 'img/5.jpg', keywords: ['cute', 'baby'] }
 ]
 var gMeme = {
-    selectedImgId: 1,
+    selectedImgId: 2,
     selectedLineIdx: 0,
     lines: [
         {
@@ -24,4 +24,8 @@ function getMeme() {
 
 function setLineTxt(newTxt) {
     gMeme.lines[gMeme.selectedLineIdx].txt = newTxt
+}
+
+function setImg(selectedImgId) {
+    gMeme.selectedImgId = selectedImgId
 }

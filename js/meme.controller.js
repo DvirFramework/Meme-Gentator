@@ -4,7 +4,7 @@ const gCtx = gCanvas.getContext('2d')
 const textInput = document.getElementById('textInput')
 
 
-const selectedImgId = 1
+const selectedImgId = 2
 
 
 renderMeme(selectedImgId)
@@ -28,11 +28,11 @@ function renderMeme(selectedImgId) {
         gCtx.strokeStyle = 'black'
         gCtx.lineWidth = 2
 
-        // Center the text on the canvas
+        
         const textX = gCanvas.width / 2 - gCtx.measureText(memeLine.txt).width / 2
-        const textY = 50 // You can adjust the Y position as needed
+        const textY = 50 
 
-        // Draw the text on the canvas
+        
         gCtx.fillText(memeLine.txt, textX, textY)
         gCtx.strokeText(memeLine.txt, textX, textY)
     }
