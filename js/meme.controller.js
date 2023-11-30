@@ -1,3 +1,4 @@
+'use strict'
 
 const gCanvas = document.getElementById('canvas')
 const gCtx = gCanvas.getContext('2d')

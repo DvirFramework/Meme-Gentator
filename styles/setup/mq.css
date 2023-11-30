@@ -1,3 +1,4 @@
+/* MOBILE ONLY */
 @media screen and (max-width: 768px) {
     .image-gallery {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -13,3 +14,30 @@
         margin: 10px 0;
     }
 }
+  
+  /* MEDIUM */
+  @media (min-width: 640px) and (max-width: 1100px) {
+    .main-layout {
+      grid-template-columns:
+        minmax(20px, 1fr)
+        minmax(auto, var(--s))
+        minmax(20px, 1fr);
+    }
+  
+  }
+  
+  /* LARGE SCREENS */
+  @media (min-width: 1100px) {
+    :root {
+      --card-layout-margin: 80px;
+      --card-layout-margin-center: 60px;
+    }
+  
+    .main-layout {
+      grid-template-columns:
+        minmax(20px, 1fr)
+        minmax(auto, var(--l))
+        minmax(20px, 1fr);
+    }
+  }
+  
