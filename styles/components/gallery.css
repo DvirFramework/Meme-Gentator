@@ -4,9 +4,14 @@
     grid-auto-flow: dense;
     gap: 10px;
     padding: 20px;
+    margin: 0 auto;
 }
 
 .image-gallery img {
     display: block;
     width: 100%;
+}
+
+.image-gallery.hidden {
+    display: none;
 }

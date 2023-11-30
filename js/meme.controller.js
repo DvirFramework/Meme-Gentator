@@ -53,6 +53,7 @@ function renderMeme(selectedImgId) {
         })
 
         updateDownloadLink()
+        hideGallery()
     }
 }
 
