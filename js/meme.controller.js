@@ -44,7 +44,7 @@ function renderMeme(selectedImgId) {
             if (idx === gMeme.selectedLineIdx) {
                 gCtx.beginPath()
                 const textWidth = gCtx.measureText(memeLine.txt).width
-                gCtx.rect(textX - 5, textY - 5, textWidth + 10, -memeLine.size - 10)
+                gCtx.rect(textX - 5, textY + 8, textWidth + 10, -memeLine.size - 10)
                 gCtx.strokeStyle = 'black'
                 gCtx.stroke()
             }
@@ -102,7 +102,7 @@ function deleteLine() {
     renderMeme(gMeme.selectedImgId)
   }
 
-function switchLine() {
+ function switchLine() {
     gMeme.selectedLineIdx = (gMeme.selectedLineIdx + 1) % gMeme.lines.length
     renderMeme(gMeme.selectedImgId)
 }
