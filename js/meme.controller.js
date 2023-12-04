@@ -17,7 +17,7 @@ increaseFontSizeBtn.addEventListener('click', increaseFontSize)
 decreaseFontSizeBtn.addEventListener('click', decreaseFontSize)
 deleteLineBtn.addEventListener('click', deleteLine)
 
-const selectedImgId = 2
+var selectedImgId 
 
 
 renderMeme(selectedImgId)
@@ -52,7 +52,6 @@ function renderMeme(selectedImgId) {
             gCtx.fillText(memeLine.txt, textX, textY)
             gCtx.strokeText(memeLine.txt, textX, textY)
         })
-
         updateDownloadLink()
     }
 }
@@ -111,4 +110,8 @@ function shareToFacebook() {
     alert('Sharing to Facebook...')
 }
 
-
+function toggleMenu() {
+     document.body.classList.toggle('menu-open');
+     const menu = document.querySelector('main-nav-list')
+     menu.classList.toggle('hidden')
+}

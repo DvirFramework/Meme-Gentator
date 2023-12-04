@@ -14,12 +14,14 @@ function renderGallery() {
 
         gallerySection.appendChild(imgElement)
     })
+    
 }
 
 
 function onImgSelect(selectedImgId) {
     setImg(selectedImgId)
     renderMeme(selectedImgId)
+    hideGallery()
 }
 
 document.addEventListener('DOMContentLoaded', function () {

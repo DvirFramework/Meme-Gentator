@@ -1,4 +1,9 @@
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
+
+    --l: 1060px;
+    --m: 800px;
+    --s: 600px;
+
 }

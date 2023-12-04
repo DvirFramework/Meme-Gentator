@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <div class="main-screen" onclick="toggleMenu()"></div>
   <header class="main-header flex space-between align-center">
     <div class="logo">Memegen</div>
         <nav class="main-nav">  
-            <ul class="main-nav-list">
+            <ul class="main-nav-list flex clean-list">
                 <li><a href="#" id="gallery-link">Gallery</a></li>
                 <li><a href="#">Memes</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
+        <button class="btn-toggle-menu" onclick="toggleMenu()">☰</button>
   </header>
   <section class="image-gallery">
     <img src="img/1.jpg" alt="" data-img-id="1">
@@ -51,6 +53,8 @@
        <button id="switchLineBtn" title="Switch Line">Switch Line</button>
        <select id="fontFamilySelect" onchange="changeFontFamily()">
         <option value="Impact">Impact</option>
+        <option value="ubuntu">Ubuntu</option>
+        <option value="inconsolata">Inconsolata</option>
     </select>
     <a id="downloadLink" download="meme.png">Download Meme</a>
     <button onclick="shareToFacebook()">Share to Facebook</button>
@@ -61,6 +65,9 @@
   <footer class="main-footer">
     <h3>Created By Dvir.D 2023</h3>
   </footer>
+
+
+
 
   <script src="js/meme.service.js"></script>
   <script src="js/meme.controller.js"></script>

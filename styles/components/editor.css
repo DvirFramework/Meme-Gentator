@@ -3,6 +3,7 @@
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -16,6 +17,7 @@
 .btns-editor {
     text-align: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .btns-editor input[type="text"] {
@@ -46,3 +48,4 @@
 .btns-editor button:hover {
     background-color: #2980b9;
 }
+
